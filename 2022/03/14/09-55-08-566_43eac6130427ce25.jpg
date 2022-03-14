@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head itemscope itemtype="http://schema.org/WebSite">
+	<meta charset="UTF-8">
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<!--[if IE ]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<![endif]-->
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	
+        
+        
+        
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        
+        
+        <meta itemprop="name" content="Math ∞ Blog" />
+        <meta itemprop="url" content="https://mathblog.com" />
+
+                                                <meta itemprop="creator accountablePerson" content="Tim Lexen" />
+                    	<link rel="pingback" href="https://mathblog.com/xmlrpc.php" />
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<script type="text/javascript">document.documentElement.className = document.documentElement.className.replace( /\bno-js\b/,'js' );</script>
+	<!-- This site is optimized with the Yoast SEO plugin v17.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Tiling with One Arc-Sided Shape | Math ∞ Blog</title>
+	<link rel="canonical" href="https://mathblog.com/tiling-one-arc-sided-shape/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Tiling with One Arc-Sided Shape | Math ∞ Blog" />
+	<meta property="og:description" content="The Arc Approach A flat puzzle (tiling) with dozens or hundreds of identical pieces may sound a little dull and predictable. But what is the most interesting shape we can use, to get the most unusual designs and the most variety? To make it more visually interesting, let’s say we want a shape with no straight edges—only curves. The following guidelines should help us get started. Let’s use circular arcs, all with the same radius of a unit length. Hereafter we won’t talk about lengths; just about angles. These are angles of the arcs and of the corner angles. For" />
+	<meta property="og:url" content="https://mathblog.com/tiling-one-arc-sided-shape/" />
+	<meta property="og:site_name" content="Math ∞ Blog" />
+	<meta property="article:publisher" content="https://www.facebook.com/mathblogcom/" />
+	<meta property="article:published_time" content="2018-03-07T03:29:08+00:00" />
+	<meta property="article:modified_time" content="2021-03-23T22:54:22+00:00" />
+	<meta property="og:image" content="https://cdn.mathblog.com/wp-content/uploads/2018/03/Arc-A-300x143.png" />
+	<meta name="twitter:card" content="summary" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://mathblog.com/#website","url":"https://mathblog.com/","name":"Math \u221e Blog","description":"Mathematics is wonderful!","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://mathblog.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://mathblog.com/tiling-one-arc-sided-shape/#primaryimage","inLanguage":"en-US","url":"https://cdn.mathblog.com/wp-content/uploads/2018/03/Arc-A.png","contentUrl":"https://cdn.mathblog.com/wp-content/uploads/2018/03/Arc-A.png","width":1098,"height":522},{"@type":"WebPage","@id":"https://mathblog.com/tiling-one-arc-sided-shape/#webpage","url":"https://mathblog.com/tiling-one-arc-sided-shape/","name":"Tiling with One Arc-Sided Shape | Math \u221e Blog","isPartOf":{"@id":"https://mathblog.com/#website"},"primaryImageOfPage":{"@id":"https://mathblog.com/tiling-one-arc-sided-shape/#primaryimage"},"datePublished":"2018-03-07T03:29:08+00:00","dateModified":"2021-03-23T22:54:22+00:00","author":{"@id":"https://mathblog.com/#/schema/person/8bb1f0b08e394879182b0b1e3bf13910"},"breadcrumb":{"@id":"https://mathblog.com/tiling-one-arc-sided-shape/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://mathblog.com/tiling-one-arc-sided-shape/"]}]},{"@type":"BreadcrumbList","@id":"https://mathblog.com/tiling-one-arc-sided-shape/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://mathblog.com/"},{"@type":"ListItem","position":2,"name":"Tiling with One Arc-Sided Shape"}]},{"@type":"Person","@id":"https://mathblog.com/#/schema/person/8bb1f0b08e394879182b0b1e3bf13910","name":"Tim Lexen","image":{"@type":"ImageObject","@id":"https://mathblog.com/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/63cab57c089ac7dd1c2b539fede81757?s=96&d=identicon&r=g","contentUrl":"https://secure.gravatar.com/avatar/63cab57c089ac7dd1c2b539fede81757?s=96&d=identicon&r=g","caption":"Tim Lexen"},"url":"https://mathblog.com/author/timlexen/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//scripts.mediavine.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Math ∞ Blog &raquo; Feed" href="https://mathblog.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Math ∞ Blog &raquo; Comments Feed" href="https://mathblog.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Math ∞ Blog &raquo; Tiling with One Arc-Sided Shape Comments Feed" href="https://mathblog.com/tiling-one-arc-sided-shape/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/cdn.mathblog.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://cdn.mathblog.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='aalb_basics_css-css'  href='https://cdn.mathblog.com/wp-content/plugins/amazon-associates-link-builder/css/aalb_basics.css' type='text/css' media='all' />
+<link rel='stylesheet' id='titan-adminbar-styles-css'  href='https://cdn.mathblog.com/wp-content/plugins/anti-spam/assets/css/admin-bar.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://cdn.mathblog.com/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp_review-style-css'  href='https://cdn.mathblog.com/wp-content/plugins/wp-review-pro/assets/css/wp-review.css' type='text/css' media='all' />
+<link rel='stylesheet' id='schema-stylesheet-css'  href='https://cdn.mathblog.com/wp-content/themes/mts_schema/style.css' type='text/css' media='all' />
+<style id='schema-stylesheet-inline-css' type='text/css'>
+
+         body {background-color:#eeeeee;background-image:url(https://cdn.mathblog.com/wp-content/themes/mts_schema/images/pattern13.png);}
+        .pace .pace-progress, #mobile-menu-wrapper ul li a:hover, .page-numbers.current, .pagination a:hover, .single .pagination a:hover .current { background: #0274BE; }
+        .postauthor h5, .single_post a, .textwidget a, .pnavigation2 a, .sidebar.c-4-12 a:hover, footer .widget li a:hover, .sidebar.c-4-12 a:hover, .reply a, .title a:hover, .post-info a:hover, .widget .thecomment, #tabber .inside li a:hover, .readMore a:hover, .fn a, a, a:hover, #secondary-navigation .navigation ul li a:hover, .readMore a, #primary-navigation a:hover, #secondary-navigation .navigation ul .current-menu-item a, .widget .wp_review_tab_widget_content a, .sidebar .wpt_widget_content a { color:#0274BE; }
+         a#pull, #commentform input#submit, #mtscontact_submit, .mts-subscribe input[type='submit'], .widget_product_search input[type='submit'], #move-to-top:hover, .currenttext, .pagination a:hover, .pagination .nav-previous a:hover, .pagination .nav-next a:hover, #load-posts a:hover, .single .pagination a:hover .currenttext, .single .pagination > .current .currenttext, #tabber ul.tabs li a.selected, .tagcloud a, .navigation ul .sfHover a, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .woocommerce .bypostauthor:after, #searchsubmit, .woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce-page nav.woocommerce-pagination ul li span.current, .woocommerce #content nav.woocommerce-pagination ul li span.current, .woocommerce-page #content nav.woocommerce-pagination ul li span.current, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce-page nav.woocommerce-pagination ul li a:hover, .woocommerce #content nav.woocommerce-pagination ul li a:hover, .woocommerce-page #content nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce-page nav.woocommerce-pagination ul li a:focus, .woocommerce #content nav.woocommerce-pagination ul li a:focus, .woocommerce-page #content nav.woocommerce-pagination ul li a:focus, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .latestPost-review-wrapper, .latestPost .review-type-circle.latestPost-review-wrapper, #wpmm-megamenu .review-total-only, .sbutton, #searchsubmit, .widget .wpt_widget_content #tags-tab-content ul li a, .widget .review-total-only.large-thumb, #add_payment_method .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce-account .woocommerce-MyAccount-navigation li.is-active { background-color:#0274BE; color: #fff!important; }
+        .related-posts .title a:hover, .latestPost .title a { color: #0274BE; }
+        .navigation #wpmm-megamenu .wpmm-pagination a { background-color: #0274BE!important; }
+        footer {background-color:#222222; }
+        footer {background-image: url( https://cdn.mathblog.com/wp-content/themes/mts_schema/images/nobg.png );}
+        .copyrights { background-color: #ffffff; }
+        .flex-control-thumbs .flex-active{ border-top:3px solid #0274BE;}
+        .wpmm-megamenu-showing.wpmm-light-scheme { background-color:#0274BE!important; }
+        
+        
+        
+        .bypostauthor > div { overflow: hidden; padding: 3%!important; background: #222; width: 94%!important; color: #AAA; }
+		.bypostauthor:after { content: "\f044"; position: absolute; font-family: fontawesome; right: 0; top: 0; padding: 1px 10px; color: #535353; font-size: 32px; }
+        
+        .page h1.title {
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    vertical-align: middle;
+}
+
+.mathcode
+{
+        border: 2px solid orange;
+        font-family: courier;
+        font-size: 17px;
+        background-color: #ffffcc;
+        padding: 5px;
+        overflow: auto;
+        color: #000;
+}
+
+.book {
+        border:  1px solid #119900;
+        padding: 10px;
+        padding-bottom: 0px;
+        margin-bottom:  10px;
+}
+
+.green{
+        background-color: #ccffcc;
+}
+
+.yellow {
+        background-color: #ffffcc;
+}
+
+.book img {
+        float: left;
+        margin-right: 7px;
+        border: none;
+}
+
+.book h3 {
+        margin-top:  5px;
+        margin-bottom:  5px;
+}
+
+.book p {
+        font-size: 13px;
+}
+
+.book p a {
+        font-weight: bold;
+        text-decoration: underline;
+}
+
+h1.book-category {
+  color: #000;
+  margin-top: 40px;
+}
+
+
+#wp-subscribe h4.title {
+    font-size: 18px !important;
+    line-height: 140% !important;
+}
+
+
+#regular-header {
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.regular_header div#primary-nav {
+    margin-bottom: -30px;
+}
+
+.featured-thumbnail img {
+    width: 200px;
+}
+
+#header {
+    background: #0e74b2;
+}
+header .post-info {
+    font-size: 13px;
+}
+
+#sidebar .widget.widget_search, #sidebar .widget.widget_search h3 {
+    color: #000;
+    background-color: #fff;
+}
+			
+</style>
+<link rel='stylesheet' id='responsive-css'  href='https://cdn.mathblog.com/wp-content/themes/mts_schema/css/responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='magnificPopup-css'  href='https://cdn.mathblog.com/wp-content/themes/mts_schema/css/magnific-popup.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css'  href='https://cdn.mathblog.com/wp-content/themes/mts_schema/css/font-awesome.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://cdn.mathblog.com/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://cdn.mathblog.com/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+<script type='text/javascript' async="async" data-noptimize="1" data-cfasync="false" src='https://scripts.mediavine.com/tags/math-blog.js' id='mv-script-wrapper-js'></script>
+<script type='text/javascript' id='tho-header-js-js-extra'>
+/* <![CDATA[ */
+var THO_Head = {"variations":{"997":{"variations":{"19":"Are Fingerprints Unique?","20":"Are Fingerprints Really Unique?","21":"Can All Fingerprints Really Be Unique?","22":"Why Our Fingerprints Are Unique"},"test_id":"4","winners":[]}},"post_id":"123325","element_tag":"thrive_headline","woo_tag":"tho_woo"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://cdn.mathblog.com/wp-content/plugins/thrive-headline-optimizer/frontend/js/header.min.js' id='tho-header-js-js'></script>
+<script type='text/javascript' id='customscript-js-extra'>
+/* <![CDATA[ */
+var mts_customscript = {"responsive":"1","nav_menu":"both"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://cdn.mathblog.com/wp-content/themes/mts_schema/js/customscript.js' id='customscript-js'></script>
+<link rel="https://api.w.org/" href="https://mathblog.com/wp-json/" /><link rel="alternate" type="application/json" href="https://mathblog.com/wp-json/wp/v2/posts/123325" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mathblog.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://cdn.mathblog.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.9.1" />
+<link rel='shortlink' href='https://mathblog.com/?p=123325' />
+<link rel="alternate" type="application/json+oembed" href="https://mathblog.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmathblog.com%2Ftiling-one-arc-sided-shape%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://mathblog.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmathblog.com%2Ftiling-one-arc-sided-shape%2F&#038;format=xml" />
+<script type='text/javascript'>window.presslabs = {"home_url":"https:\/\/mathblog.com"}</script><script type='text/javascript'>
+	(function () {
+		var pl_beacon = document.createElement('script');
+		pl_beacon.type = 'text/javascript';
+		pl_beacon.async = true;
+		var host = 'https://mathblog.com';
+		if ('https:' == document.location.protocol) {
+			host = host.replace('http://', 'https://');
+		}
+		pl_beacon.src = host + '/' + '2WOFDurG0lJJ' + '.js?ts=' + Math.floor((Math.random() * 100000) + 1);
+		var first_script_tag = document.getElementsByTagName('script')[0];
+		first_script_tag.parentNode.insertBefore(pl_beacon, first_script_tag);
+	})();
+</script><!--[if IE 7]>
+<link rel="stylesheet" href="https://cdn.mathblog.com/wp-content/plugins/wp-review-pro/assets/css/wp-review-ie7.css">
+<![endif]-->
+
+<style type="text/css">
+#logo a { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 48px; color: #1e73be;text-transform: uppercase; }
+#primary-navigation a { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 17px; color: #777777; }
+#secondary-navigation a { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 15px; color: #ffffff;text-transform: uppercase; }
+.latestPost .title a { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 38px; color: #0274be; }
+.single-title { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 38px; color: #222222; }
+body { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 18px; color: #444444; }
+#sidebar .widget h3 { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 20px; color: #222222;text-transform: uppercase; }
+#sidebar .widget { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 16px; color: #444444; }
+.footer-widgets h3 { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 18px; color: #ffffff;text-transform: uppercase; }
+.f-widget a, footer .wpt_widget_content a, footer .wp_review_tab_widget_content a, footer .wpt_tab_widget_content a, footer .widget .wp_review_tab_widget_content a { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 16px; color: #999999; }
+.footer-widgets, .f-widget .top-posts .comment_num, footer .meta, footer .twitter_time, footer .widget .wpt_widget_content .wpt-postmeta, footer .widget .wpt_comment_content, footer .widget .wpt_excerpt, footer .wp_review_tab_widget_content .wp-review-tab-postmeta, footer .advanced-recent-posts p, footer .popular-posts p, footer .category-posts p { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 16px; color: #777777; }
+#copyright-note { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 14px; color: #7e7d7d; }
+h1 { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 28px; color: #222222; }
+h2 { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 24px; color: #222222; }
+h3 { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 22px; color: #222222; }
+h4 { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 20px; color: #222222; }
+h5 { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 18px; color: #222222; }
+h6 { font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 16px; color: #222222; }
+</style>
+<style type="text/css" media="all">
+/* <![CDATA[ */
+@import url("https://cdn.mathblog.com/wp-content/plugins/wp-table-reloaded/css/plugin.css?ver=1.9.4");
+@import url("https://cdn.mathblog.com/wp-content/plugins/wp-table-reloaded/css/datatables.css?ver=1.9.4");
+/* ]]> */
+</style>		<style type="text/css" id="wp-custom-css">
+			#page {
+	width: 1200px;
+}
+
+.sidebar.c-4-12 {
+	width: 340px;
+}
+
+@media screen and (min-width: 769px) {
+	.article {
+    width: calc(100% - 360px)!important;
+    padding: 3rem;
+		line-height:2;
+	}
+}
+
+.article {
+	width: 100%;
+}		</style>
+		</head>
+<body id="blog" class="post-template-default single single-post postid-123325 single-format-standard main" itemscope itemtype="http://schema.org/WebPage">       
+	<div class="main-container">
+		<header id="site-header" class="main-header regular_header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+							<div id="primary-nav">
+					<div class="container">
+				        <div id="primary-navigation" class="primary-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+					        <nav class="navigation clearfix">
+						     							<ul id="menu-top-menu" class="menu clearfix"><li id="menu-item-130999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-130999"><a href="https://mathblog.com/">Homepage</a></li>
+<li id="menu-item-109027" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109027"><a title="Recommended Math Books" href="https://mathblog.com/mathematics-books/">Recommended Math Books</a></li>
+<li id="menu-item-109028" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109028"><a href="https://mathblog.com/about-us/">About</a></li>
+<li id="menu-item-109030" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109030"><a href="https://mathblog.com/privacy-policy/">Privacy Policy</a></li>
+</ul>						    				            												        </nav>
+				    	</div>
+				    </div>
+			    </div>
+									    <div id="regular-header">
+			    	<div class="container">
+						<div class="logo-wrap">
+																								<h2 id="logo" class="text-logo" itemprop="headline">
+										<a href="https://mathblog.com">Math ∞ Blog</a>
+									</h2><!-- END #logo -->
+																					</div>
+											</div>
+				</div>
+									<div id="header">
+						    <div class="container">
+				    					<div id="secondary-navigation" class="secondary-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+						<a href="#" id="pull" class="toggle-mobile-menu">Menu</a>
+													<nav class="navigation clearfix mobile-menu-wrapper">
+																	<ul id="menu-categories" class="menu clearfix"><li id="menu-item-108811" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-108811"><a href="https://mathblog.com/category/books/"><i class="fa fa-book"></i> Books</a></li>
+<li id="menu-item-108810" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-108810"><a href="https://mathblog.com/category/applied-math/"><i class="fa fa-cogs"></i> Applied Math</a></li>
+<li id="menu-item-112290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-112290"><a href="https://mathblog.com/reference/"><i class="fa fa-anchor"></i> Basic Math</a>
+<ul class="sub-menu">
+	<li id="menu-item-113248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-113248"><a href="https://mathblog.com/reference/arithmetic/">Arithmetic</a>
+	<ul class="sub-menu">
+		<li id="menu-item-113251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113251"><a href="https://mathblog.com/reference/arithmetic/arithmetic-sequence/">Arithmetic Sequence</a></li>
+		<li id="menu-item-113253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113253"><a href="https://mathblog.com/reference/arithmetic/number-theory/">Number Theory</a></li>
+		<li id="menu-item-113254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113254"><a href="https://mathblog.com/reference/arithmetic/whole-numbers/">Whole Numbers</a></li>
+		<li id="menu-item-113255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113255"><a href="https://mathblog.com/reference/arithmetic/rounding/">Rounding</a></li>
+		<li id="menu-item-113256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113256"><a href="https://mathblog.com/reference/arithmetic/estimation/">Estimation</a></li>
+		<li id="menu-item-113257" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113257"><a href="https://mathblog.com/reference/arithmetic/place-value/">Place Value</a></li>
+		<li id="menu-item-113258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113258"><a href="https://mathblog.com/reference/arithmetic/addition/">Addition</a></li>
+		<li id="menu-item-113259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113259"><a href="https://mathblog.com/reference/arithmetic/subtraction/">Subtraction</a></li>
+		<li id="menu-item-113260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113260"><a href="https://mathblog.com/reference/arithmetic/negative-numbers/">Negative Numbers</a></li>
+		<li id="menu-item-113261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113261"><a href="https://mathblog.com/reference/arithmetic/multiplication/">Multiplication</a></li>
+		<li id="menu-item-113262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113262"><a href="https://mathblog.com/reference/arithmetic/prime-factorization/">Prime Factorization</a></li>
+		<li id="menu-item-113263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113263"><a href="https://mathblog.com/reference/arithmetic/decimals/">Decimals</a></li>
+		<li id="menu-item-113264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113264"><a href="https://mathblog.com/reference/arithmetic/division/">Division</a></li>
+		<li id="menu-item-113265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113265"><a href="https://mathblog.com/reference/arithmetic/fractions/">Fractions</a></li>
+		<li id="menu-item-113266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113266"><a href="https://mathblog.com/reference/arithmetic/how-to-find-the-mean/">Find The Mean</a></li>
+		<li id="menu-item-113267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113267"><a href="https://mathblog.com/reference/arithmetic/how-to-find-the-median/">Find The Median</a></li>
+		<li id="menu-item-113268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113268"><a href="https://mathblog.com/reference/arithmetic/how-to-find-the-mode/">Find The Mode</a></li>
+		<li id="menu-item-113269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113269"><a href="https://mathblog.com/reference/arithmetic/order-of-operations/">Order of Operations</a></li>
+		<li id="menu-item-113270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113270"><a href="https://mathblog.com/reference/arithmetic/percentages/">Percentages</a></li>
+		<li id="menu-item-113271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113271"><a href="https://mathblog.com/reference/arithmetic/probability/">Probability</a></li>
+		<li id="menu-item-113272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113272"><a href="https://mathblog.com/reference/arithmetic/ratios/">Ratios</a></li>
+		<li id="menu-item-113274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113274"><a href="https://mathblog.com/reference/arithmetic/absolute-value/">Absolute Value</a></li>
+		<li id="menu-item-113273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113273"><a href="https://mathblog.com/reference/arithmetic/number-line/">Number Line</a></li>
+		<li id="menu-item-113275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113275"><a href="https://mathblog.com/reference/arithmetic/equations/">Equations</a></li>
+		<li id="menu-item-113276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113276"><a href="https://mathblog.com/reference/arithmetic/distance-two-points/">Distance Between Two Points</a></li>
+		<li id="menu-item-113277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113277"><a href="https://mathblog.com/reference/arithmetic/logarithm/">Logarithm</a></li>
+		<li id="menu-item-113278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113278"><a href="https://mathblog.com/reference/arithmetic/fibonacci-sequence/">Fibonacci Sequence</a></li>
+	</ul>
+</li>
+	<li id="menu-item-113250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-113250"><a href="https://mathblog.com/reference/geometry/">Geometry</a>
+	<ul class="sub-menu">
+		<li id="menu-item-113279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-113279"><a href="https://mathblog.com/reference/geometry/triangles/">Triangles</a>
+		<ul class="sub-menu">
+			<li id="menu-item-113285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113285"><a href="https://mathblog.com/reference/geometry/right-triangle/">Right Triangle</a></li>
+			<li id="menu-item-113280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113280"><a href="https://mathblog.com/reference/geometry/sss-triangles/">SSS Triangles</a></li>
+			<li id="menu-item-113281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113281"><a href="https://mathblog.com/reference/geometry/ssa-triangle/">SSA Triangle</a></li>
+			<li id="menu-item-113282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113282"><a href="https://mathblog.com/reference/geometry/sas-triangle/">SAS Triangle</a></li>
+			<li id="menu-item-113284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113284"><a href="https://mathblog.com/reference/geometry/asa-triangles/">ASA Triangles</a></li>
+		</ul>
+</li>
+		<li id="menu-item-113286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113286"><a href="https://mathblog.com/reference/geometry/angles/">Angles</a></li>
+		<li id="menu-item-113287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113287"><a href="https://mathblog.com/reference/geometry/area/">Area</a></li>
+		<li id="menu-item-113288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-113288"><a href="https://mathblog.com/reference/geometry/circle/">Circle</a>
+		<ul class="sub-menu">
+			<li id="menu-item-113289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113289"><a href="https://mathblog.com/reference/geometry/circumference/">Circumference</a></li>
+		</ul>
+</li>
+		<li id="menu-item-113309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113309"><a href="https://mathblog.com/reference/geometry/area-of-a-square/">Area of a Square</a></li>
+		<li id="menu-item-113306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113306"><a href="https://mathblog.com/reference/geometry/sphere/">Sphere</a></li>
+		<li id="menu-item-113290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113290"><a href="https://mathblog.com/reference/geometry/cone/">Cone</a></li>
+		<li id="menu-item-113292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113292"><a href="https://mathblog.com/reference/geometry/cylinder/">Cylinder</a></li>
+		<li id="menu-item-113293" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113293"><a href="https://mathblog.com/reference/geometry/heptagon/">Heptagon</a></li>
+		<li id="menu-item-113291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113291"><a href="https://mathblog.com/reference/geometry/congruent-shapes/">Congruent Shapes</a></li>
+		<li id="menu-item-113294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113294"><a href="https://mathblog.com/reference/geometry/hexagon/">Hexagon</a></li>
+		<li id="menu-item-113295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113295"><a href="https://mathblog.com/reference/geometry/octagon/">Octagon</a></li>
+		<li id="menu-item-113298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113298"><a href="https://mathblog.com/reference/geometry/pentagon/">So You Want to Know About Pentagons?</a></li>
+		<li id="menu-item-113296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113296"><a href="https://mathblog.com/reference/geometry/parallel-lines/">Parallel Lines</a></li>
+		<li id="menu-item-113297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113297"><a href="https://mathblog.com/reference/geometry/parallelogram/">Parallelogram</a></li>
+		<li id="menu-item-113299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113299"><a href="https://mathblog.com/reference/geometry/pi/">Pi</a></li>
+		<li id="menu-item-113300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113300"><a href="https://mathblog.com/reference/geometry/polygon/">Polygon</a></li>
+		<li id="menu-item-113303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113303"><a href="https://mathblog.com/reference/geometry/rectangle/">Rectangle</a></li>
+		<li id="menu-item-113301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113301"><a href="https://mathblog.com/reference/geometry/pyramid/">Pyramid</a></li>
+		<li id="menu-item-113304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113304"><a href="https://mathblog.com/reference/geometry/rectangular-pyramid/">Rectangular Pyramid</a></li>
+		<li id="menu-item-113305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113305"><a href="https://mathblog.com/reference/geometry/rhombus/">Rhombus</a></li>
+		<li id="menu-item-113308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113308"><a href="https://mathblog.com/reference/geometry/trapezoid/">Trapezoid</a></li>
+		<li id="menu-item-113307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113307"><a href="https://mathblog.com/reference/geometry/tessellations/">Tessellations</a></li>
+		<li id="menu-item-113302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113302"><a href="https://mathblog.com/reference/geometry/radian-measure/">Radian Measure</a></li>
+	</ul>
+</li>
+	<li id="menu-item-113247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-113247"><a href="https://mathblog.com/reference/algebra/">Algebra</a>
+	<ul class="sub-menu">
+		<li id="menu-item-113310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113310"><a href="https://mathblog.com/reference/algebra/interval-notation/">Interval Notation</a></li>
+		<li id="menu-item-113311" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113311"><a href="https://mathblog.com/reference/algebra/how-to-calculate-slope/">How To Calculate Slope</a></li>
+		<li id="menu-item-113312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113312"><a href="https://mathblog.com/reference/algebra/factoring/">Factoring</a></li>
+		<li id="menu-item-113313" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113313"><a href="https://mathblog.com/reference/algebra/binomial-expansion/">Binomial Expansion</a></li>
+		<li id="menu-item-113314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113314"><a href="https://mathblog.com/reference/algebra/matrix-algebra/">Matrix Algebra</a></li>
+		<li id="menu-item-113315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113315"><a href="https://mathblog.com/reference/algebra/linear-programming/">Linear Programming</a></li>
+		<li id="menu-item-113316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113316"><a href="https://mathblog.com/reference/algebra/quadratic-formula/">Quadratic Formula</a></li>
+		<li id="menu-item-113317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113317"><a href="https://mathblog.com/reference/algebra/variables-with-exponents/">Variables with Exponents</a></li>
+		<li id="menu-item-113318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113318"><a href="https://mathblog.com/reference/algebra/synthetic-division/">Synthetic Division</a></li>
+		<li id="menu-item-113319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113319"><a href="https://mathblog.com/reference/algebra/inverse-functions/">Inverse Functions</a></li>
+		<li id="menu-item-113320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113320"><a href="https://mathblog.com/reference/algebra/asymptotes/">Asymptotes</a></li>
+		<li id="menu-item-113321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113321"><a href="https://mathblog.com/reference/algebra/hyperbolas/">Hyperbolas</a></li>
+		<li id="menu-item-113322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113322"><a href="https://mathblog.com/reference/algebra/graphing-inequalities/">Graphing Inequalities</a></li>
+	</ul>
+</li>
+	<li id="menu-item-113252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-113252"><a href="https://mathblog.com/reference/trigonometry/">Trigonometry</a>
+	<ul class="sub-menu">
+		<li id="menu-item-113323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113323"><a href="https://mathblog.com/reference/trigonometry/law-of-cosines/">Law of Cosines</a></li>
+		<li id="menu-item-113324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113324"><a href="https://mathblog.com/reference/trigonometry/law-of-sines/">Law of Sines</a></li>
+		<li id="menu-item-113325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113325"><a href="https://mathblog.com/reference/trigonometry/trig-ratios/">Trig Ratios</a></li>
+		<li id="menu-item-113326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113326"><a href="https://mathblog.com/reference/trigonometry/trig-integrals/">Trig Integrals</a></li>
+		<li id="menu-item-113327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113327"><a href="https://mathblog.com/reference/trigonometry/right-triangle-trig/">Right Triangle Trig</a></li>
+		<li id="menu-item-113328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113328"><a href="https://mathblog.com/reference/trigonometry/trig-functions/">Trig Functions</a></li>
+	</ul>
+</li>
+	<li id="menu-item-113249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-113249"><a href="https://mathblog.com/reference/calculus/">Calculus</a>
+	<ul class="sub-menu">
+		<li id="menu-item-113329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113329"><a href="https://mathblog.com/reference/calculus/minima-and-maxima/">Minima and Maxima</a></li>
+		<li id="menu-item-113330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113330"><a href="https://mathblog.com/reference/calculus/improper-integrals/">Improper Integrals</a></li>
+		<li id="menu-item-113331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113331"><a href="https://mathblog.com/reference/calculus/definite-integrals/">Definite Integrals</a></li>
+	</ul>
+</li>
+	<li id="menu-item-113332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-113332"><a href="https://mathblog.com/reference/theorems/">Theorems</a>
+	<ul class="sub-menu">
+		<li id="menu-item-113333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113333"><a href="https://mathblog.com/reference/theorems/pythagorean-theorem/">Pythagorean Theorem</a></li>
+		<li id="menu-item-113334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113334"><a href="https://mathblog.com/reference/theorems/bayes-theorem/">Bayes&#8217; Theorem</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-108812" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-108812"><a href="https://mathblog.com/category/math-education/">Math Education</a></li>
+<li id="menu-item-108818" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-108818"><a href="https://mathblog.com/category/probability-theory-and-statistics/">Statistics</a></li>
+<li id="menu-item-108819" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-108819"><a href="https://mathblog.com/category/math-news/">Math News</a></li>
+<li id="menu-item-108815" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-108815"><a href="https://mathblog.com/category/history/">History</a></li>
+</ul>															</nav>
+											</div>         
+				</div><!--.container-->
+			</div>
+		</header>
+		<div id="page" class="single">
+
+		
+	<article class="article">
+		<div id="content_box" >
+							<div id="post-123325" class="g post post-123325 type-post status-publish format-standard hentry category-general mv-content-wrapper">
+											<div class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#"><div><i class="fa fa-home"></i></div> <div typeof="v:Breadcrumb" class="root"><a rel="v:url" property="v:title" href="https://mathblog.com">Home</a></div><div><i class="fa fa-caret-right"></i></div><div typeof="v:Breadcrumb"><a href="https://mathblog.com/category/general/" rel="v:url" property="v:title">General</a></div><div><i class="fa fa-caret-right"></i></div><div><span>Tiling with One Arc-Sided Shape</span></div></div>
+																		<div class="single_post">
+									<header>
+																				<h1 class="title single-title entry-title">Tiling with One Arc-Sided Shape</h1>
+												<div class="post-info">
+              	            <span class="theauthor"><i class="fa fa-user"></i> <span><a href="https://mathblog.com/author/timlexen/" title="Posts by Tim Lexen" rel="author">Tim Lexen</a></span></span>
+	        	            <span class="thecategory"><i class="fa fa-tags"></i> <a href="https://mathblog.com/category/general/" title="View all posts in General">General</a></span>
+	        	            <span class="thetime date updated"><i class="fa fa-calendar"></i> <span>March 6, 2018</span></span>
+	        	            <span class="thecomment"><i class="fa fa-comments"></i> <a href="https://mathblog.com/tiling-one-arc-sided-shape/#comments" itemprop="interactionCount">3 Comments</a></span>
+	        		</div>
+										</header><!--.headline_area-->
+									<div class="post-single-content box mark-links entry-content">
+																															<p><strong>The Arc Approach</strong></p>
+<p>A flat puzzle (tiling) with dozens or hundreds of identical pieces may sound a little dull and predictable. But what is the most interesting shape we can use, to get the most unusual designs and the most variety? To make it more visually interesting, let’s say we want a shape with no straight edges—only curves. The following guidelines should help us get started.</p>
+<ol>
+<li>Let’s use circular arcs, all with the same radius of a unit length. Hereafter we won’t talk about lengths; just about angles. These are angles of the arcs and of the corner angles. For good tiling these angles need to be divisors of 360° such as multiples of 12° or 15°: “agreeable” angles.</li>
+<li>Since the arcs must fit together there must be as much concave arc as convex arc.</li>
+<li>We’ll look at shapes that at least tile periodically—that is, by repeating it in simple translation—but are looking for tiles that fit together after rotation, with the more options the better.</li>
+<li>Let’s say we are free to use the reflection or mirror image of the shape. This might not seem important at first with symmetrical shapes but will be important later with more complex shapes and tilings.</li>
+</ol>
+<p><strong>Circling the Square</strong><br />
+It is simplest to start with a square, since we can just replace the sides with two concave and two convex arcs, and get tiling based on adjacent squares as shown below. We can start with 90° arcs, which could encircle the square. The bottom shape below will show up again. It has been used for centuries. Since it is could be viewed as a stylized horseshoe crab, we’ll call it the Crab.</p>
+<p><a href="https://cdn.mathblog.com/wp-content/uploads/2018/03/Arc-A.png"><img class=" wp-image-123327 aligncenter" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-layzr="https://cdn.mathblog.com/wp-content/uploads/2018/03/Arc-A-300x143.png" alt="" width="478" height="228" data-layzr-srcset="https://cdn.mathblog.com/wp-content/uploads/2018/03/Arc-A-300x143.png 300w, https://cdn.mathblog.com/wp-content/uploads/2018/03/Arc-A-768x365.png 768w, https://cdn.mathblog.com/wp-content/uploads/2018/03/Arc-A-1024x487.png 1024w, https://cdn.mathblog.com/wp-content/uploads/2018/03/Arc-A.png 1098w" sizes="(max-width: 478px) 100vw, 478px" /></a></p>
+<p>The arc angle can be any value up to 180°, as shown below.</p>
+<p><a href="https://cdn.mathblog.com/wp-content/uploads/2018/03/Arc-B.png"><img loading="lazy" class="wp-image-123328 aligncenter" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-layzr="https://cdn.mathblog.com/wp-content/uploads/2018/03/Arc-B-300x116.png" alt="" width="476" height="184" data-layzr-srcset="https://cdn.mathblog.com/wp-content/uploads/2018/03/Arc-B-300x116.png 300w, https://cdn.mathblog.com/wp-content/uploads/2018/03/Arc-B-768x297.png 768w, https://cdn.mathblog.com/wp-content/uploads/2018/03/Arc-B.png 974w" sizes="(max-width: 476px) 100vw, 476px" /></a></p>
+<p>Similar results can be achieved when starting with a rhombus, but with a more distorted view:</p>
+<p><a href="https://cdn.mathblog.com/wp-content/uploads/2018/03/C.png"><img loading="lazy" class="wp-image-123329 aligncenter" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-layzr="https://cdn.mathblog.com/wp-content/uploads/2018/03/C-300x160.png" alt="" width="422" height="225" data-layzr-srcset="https://cdn.mathblog.com/wp-content/uploads/2018/03/C-300x160.png 300w, https://cdn.mathblog.com/wp-content/uploads/2018/03/C-768x410.png 768w, https://cdn.mathblog.com/wp-content/uploads/2018/03/C.png 992w" sizes="(max-width: 422px) 100vw, 422px" /></a></p>
+<p><strong>Trying Triangles</strong><br />
+It we want to start with a triangle, it becomes more difficult due to the three sides. We can’t just replace the three sides of an equilateral triangle with identical arcs, since we won’t be able to get the same amount of convex and concave arc.<br />
+A 45° right triangle can be easily converted by putting a 180° arc on the hypotenuse, and 90° arcs on the two smaller sides. This gives us the Crab again.</p>
+<p><a href="https://cdn.mathblog.com/wp-content/uploads/2018/03/D.png"><img loading="lazy" class="size-medium wp-image-123330 aligncenter" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-layzr="https://cdn.mathblog.com/wp-content/uploads/2018/03/D-300x155.png" alt="" width="300" height="155" data-layzr-srcset="https://cdn.mathblog.com/wp-content/uploads/2018/03/D-300x155.png 300w, https://cdn.mathblog.com/wp-content/uploads/2018/03/D-680x350.png 680w, https://cdn.mathblog.com/wp-content/uploads/2018/03/D-1360x700.png 1360w, https://cdn.mathblog.com/wp-content/uploads/2018/03/D.png 686w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Any right triangle can be converted to a tiling shape, by putting a convex 180° arc on the hypotenuse, and same-radius concave arcs on each of the smaller sides. This is because any right triangle can be inscribed in a half circle.</p>
+<p><a href="https://cdn.mathblog.com/wp-content/uploads/2018/03/E.png"><img loading="lazy" class=" wp-image-123331 aligncenter" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-layzr="https://cdn.mathblog.com/wp-content/uploads/2018/03/E-300x99.png" alt="" width="536" height="177" data-layzr-srcset="https://cdn.mathblog.com/wp-content/uploads/2018/03/E-300x99.png 300w, https://cdn.mathblog.com/wp-content/uploads/2018/03/E-768x254.png 768w, https://cdn.mathblog.com/wp-content/uploads/2018/03/E-1024x338.png 1024w, https://cdn.mathblog.com/wp-content/uploads/2018/03/E.png 1078w" sizes="(max-width: 536px) 100vw, 536px" /></a></p>
+<p>This shape can tile periodically, and some special cases&#8211;such as conversions from 45° and 30°/60° right triangles—result in shapes with agreeable angles that can also tile with rotations. But with all other right triangles we can’t easily get the final agreeable angles we want.</p>
+<p><strong>Coming Full Circle</strong></p>
+<p>If we start with a whole circle, we will want to replace half the circumference with concave arcs. We could start with creating two 90° concave arcs, either opposite each other or next to each other&#8211;and get the two same shapes we got initially using squares.<br />
+We can also use three 60° concave arcs. This can be done in the three arrangements shown below.</p>
+<p><a href="https://cdn.mathblog.com/wp-content/uploads/2018/03/F.png"><img loading="lazy" class=" wp-image-123332 aligncenter" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-layzr="https://cdn.mathblog.com/wp-content/uploads/2018/03/F-300x216.png" alt="" width="453" height="326" data-layzr-srcset="https://cdn.mathblog.com/wp-content/uploads/2018/03/F-300x216.png 300w, https://cdn.mathblog.com/wp-content/uploads/2018/03/F-768x554.png 768w, https://cdn.mathblog.com/wp-content/uploads/2018/03/F.png 794w" sizes="(max-width: 453px) 100vw, 453px" /></a></p>
+<p>These shapes can also be made using a hexagon as the starting point.<br />
+The shape on the right above&#8211;with the three adjacent concave cutouts—can be modified with other sizes or concave arcs. If we stay symmetrical we can use various combinations of concave arcs totaling 180° as shown below. These will all tile in the same periodic manner. If the bottom middle cutout is reduced to nothing, we will have just two 90° concave arcs: the Crab again.</p>
+<p><a href="https://cdn.mathblog.com/wp-content/uploads/2018/03/G.png"><img loading="lazy" class=" wp-image-123333 aligncenter" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-layzr="https://cdn.mathblog.com/wp-content/uploads/2018/03/G-300x185.png" alt="" width="478" height="295" data-layzr-srcset="https://cdn.mathblog.com/wp-content/uploads/2018/03/G-300x185.png 300w, https://cdn.mathblog.com/wp-content/uploads/2018/03/G-768x474.png 768w, https://cdn.mathblog.com/wp-content/uploads/2018/03/G-223x137.png 223w, https://cdn.mathblog.com/wp-content/uploads/2018/03/G.png 776w" sizes="(max-width: 478px) 100vw, 478px" /></a></p>
+<p>This approach with three concave cutouts in the lower half can also be used based on a lens shape. The lens is created by taking one arc (up to 180 degrees) and mirroring it about its endpoints. This is the more general case of the circle. As we did with the circle, we can make three concave cutouts bounded by one of the arcs, with similar periodic tiling.</p>
+<p><a href="https://cdn.mathblog.com/wp-content/uploads/2018/03/H.png"><img loading="lazy" class=" wp-image-123334 aligncenter" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-layzr="https://cdn.mathblog.com/wp-content/uploads/2018/03/H-300x134.png" alt="" width="490" height="219" data-layzr-srcset="https://cdn.mathblog.com/wp-content/uploads/2018/03/H-300x134.png 300w, https://cdn.mathblog.com/wp-content/uploads/2018/03/H-768x344.png 768w, https://cdn.mathblog.com/wp-content/uploads/2018/03/H.png 842w" sizes="(max-width: 490px) 100vw, 490px" /></a></p>
+<p>All the shapes above primarily tile predictably and periodically, albeit with a wide range of possible arc angles and corner angles. Some of them can fit together in more complex ways, with rotation and more choices for tiling. How can we get the most flexibility from a single shape; or better, from a family of shapes?</p>
+<p><strong>Trifocal Lenses</strong></p>
+<p>The shape family with the most overall flexibility has three sides. But is not constructed from a triangle; rather it starts with the desired corner angles or arcs in the framework of a lens shape.<br />
+Let’s say we want a triangle-like shape with the usable corner angles of 30° and 60°. These will also be the angles of the two concave arcs. We could start construction with these, but it’s easier to start with the large-arc lens which will be the sum of these, or 90°. So we make a 90° arc and mirror it to make a lens shape. Then mark two smaller arcs—where they meet on the mirrored arc—and mirror each of them about their endpoints.</p>
+<p><a href="https://cdn.mathblog.com/wp-content/uploads/2018/03/I.png"><img loading="lazy" class=" wp-image-123335 aligncenter" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-layzr="https://cdn.mathblog.com/wp-content/uploads/2018/03/I-300x124.png" alt="" width="486" height="201" data-layzr-srcset="https://cdn.mathblog.com/wp-content/uploads/2018/03/I-300x124.png 300w, https://cdn.mathblog.com/wp-content/uploads/2018/03/I-768x317.png 768w, https://cdn.mathblog.com/wp-content/uploads/2018/03/I.png 1021w" sizes="(max-width: 486px) 100vw, 486px" /></a></p>
+<p>The resulting shape allows surprising flexibility for tiling.</p>
+<p><a href="https://cdn.mathblog.com/wp-content/uploads/2018/03/J.png"><img loading="lazy" class=" wp-image-123336 aligncenter" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-layzr="https://cdn.mathblog.com/wp-content/uploads/2018/03/J-300x175.png" alt="" width="445" height="260" data-layzr-srcset="https://cdn.mathblog.com/wp-content/uploads/2018/03/J-300x175.png 300w, https://cdn.mathblog.com/wp-content/uploads/2018/03/J-768x448.png 768w, https://cdn.mathblog.com/wp-content/uploads/2018/03/J.png 943w" sizes="(max-width: 445px) 100vw, 445px" /></a></p>
+<p>The big advantage with this approach is that we choose the corner angles first, and the rest follows. If we want to build tiling around 5-pointed stars or flowers, we can choose small angles of, say, 36° and 72°.<br />
+Assuming we use reasonable angles, this construction and tiling works for any large angle up to 180°, and any proportioning of the two smaller arcs. The corner angle opposite the large convex arc is always the supplement (difference from 180°) of the large arc. And the smaller corner angles are always the same as the concave arcs.</p>
+<p><strong>Conclusion</strong></p>
+<p>The above approach lets us make a wide range of shapes, with complex and varied tilings that are radial/polar, periodic, or non-periodic, or some combination of these. This new family of shapes we can call tricurves.<br />
+Please try this out, explore the possibilities, and share what you find!<br />
+For more information on tricurves, see <a href="https://web.calstatela.edu/curvebank/tricurve/tricurve.htm" target="_blank" rel="noopener">National Curve Bank entry and article</a> and <a href="https://paulbourke.net/geometry/tricurves/" target="_blank" rel="noopener">more images</a>.</p>
+<span id="tho-end-content" style="display: block; visibility: hidden;"></span>
+            <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $.post('https://mathblog.com/wp-admin/admin-ajax.php', {action: 'mts_view_count', id: '123325'});
+            });
+            </script>																																							</div><!--.post-single-content-->
+								</div><!--.single_post-->
+																								  		<!-- Start Related Posts -->
+  		<div class="related-posts"><h4>Related Posts</h4><div class="clear">  			<article class="latestPost excerpt  ">
+                                    <header>
+					<h2 class="title front-view-title"><a href="https://mathblog.com/us-states-best-worst-math/" title="Which States Are The Best (&#038; Worst) At Math">Which States Are The Best (&#038; Worst) At Math</a></h2>
+				</header>
+              </article><!--.post.excerpt-->
+  			  			<article class="latestPost excerpt  ">
+                                    <header>
+					<h2 class="title front-view-title"><a href="https://mathblog.com/invasion-of-the-physicists/" title="Invasion of the Physicists">Invasion of the Physicists</a></h2>
+				</header>
+              </article><!--.post.excerpt-->
+  			  			<article class="latestPost excerpt  last">
+                                    <header>
+					<h2 class="title front-view-title"><a href="https://mathblog.com/regular-expressions-for-numbers-in-bash/" title="Regular Expressions for Numbers in BASH">Regular Expressions for Numbers in BASH</a></h2>
+				</header>
+              </article><!--.post.excerpt-->
+  			</div></div>  		<!-- .related-posts -->
+  									<div class="postauthor">
+									<h4>About The Author</h4>
+									<img alt='' src='https://secure.gravatar.com/avatar/63cab57c089ac7dd1c2b539fede81757?s=100&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/63cab57c089ac7dd1c2b539fede81757?s=200&#038;d=identicon&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' loading='lazy'/>									<h5 class="vcard author"><a href="https://mathblog.com/author/timlexen/" class="fn">Tim Lexen</a></h5>
+									<p></p>
+								</div>
+												</div><!--.g post-->
+				<!-- You can start editing here. -->
+	<div id="comments">
+		<h4 class="total-comments">3 Comments</h4>
+		<ol class="commentlist">
+			    	<li class="comment even thread-even depth-1" id="li-comment-30047">
+    		                    <div id="comment-30047" itemscope itemtype="http://schema.org/UserComments">
+                        <div class="comment-author vcard">
+                            <img alt='' src='https://secure.gravatar.com/avatar/11145c7230b95632de2690043e674e7c?s=80&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/11145c7230b95632de2690043e674e7c?s=160&#038;d=identicon&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/>                            <span class="fn" itemprop="creator" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href='https://mathhombre.blogspot.com' rel='external nofollow ugc' class='url'>John Golden</a></span></span>                                                            <span class="ago">March 11, 2018</span>
+                                                        <span class="comment-meta">
+                                                            </span>
+                        </div>
+                                                <div class="commentmetadata">
+                            <div class="commenttext" itemprop="commentText">
+                                <div class="comment-text-inner"><p>Love this post and made some GeoGebra to play more with the lenses. <a href="https://www.geogebra.org/m/nfPX5bpw" rel="nofollow ugc">https://www.geogebra.org/m/nfPX5bpw</a></p>
+</div>                            </div>
+                            <div class="reply">
+                                <a rel='nofollow' class='comment-reply-link' href='#comment-30047' data-commentid="30047" data-postid="123325" data-belowelement="comment-30047" data-respondelement="respond" data-replyto="Reply to John Golden" aria-label='Reply to John Golden'>Reply</a>                            </div>
+                        </div>
+                    </div>
+                    	<!-- WP adds </li> -->
+    </li><!-- #comment-## -->
+    	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-30048">
+    		                    <div id="comment-30048" itemscope itemtype="http://schema.org/UserComments">
+                        <div class="comment-author vcard">
+                            <img alt='' src='https://secure.gravatar.com/avatar/8f3539268cbb02d8ec0f79df7698f698?s=80&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/8f3539268cbb02d8ec0f79df7698f698?s=160&#038;d=identicon&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/>                            <span class="fn" itemprop="creator" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href='https://chinamangoogleomeradmani.wordpress.com/author/omeradmani/' rel='external nofollow ugc' class='url'>Omer Admani</a></span></span>                                                            <span class="ago">April 1, 2018</span>
+                                                        <span class="comment-meta">
+                                                            </span>
+                        </div>
+                                                <div class="commentmetadata">
+                            <div class="commenttext" itemprop="commentText">
+                                <div class="comment-text-inner"><p>Dear Sir,<br />
+I would appreciate your thoughts on the following:</p>
+<p>On the New Principia:</p>
+<p>I have made the post more concise and precise here. All prior messages can be disregarded (particularly the partial definition of a straight line).</p>
+<p>Some theory (below) before the definitions. This is to convey how I conceptualized the beginning of what I believe is a &#8220;New Calculus&#8221;. I thought about how an arc of a circle can be defined in a topological sense. This led me to the definition of a line, and eventually, a circle, square, rectangle, and equilateral triangle. Therefore, I want to convey the initial part, as it is paramount to the understanding of what follows in terms of definitions.</p>
+<p>A circle is formed by very short lines ( not horizontal or vertical, but &#8220;angulated&#8221;) on the circumference, as the limit of those lines, “delta x,” go to zero. So, the circumference of a circle is the sum of these small lines that tend to go to zero in the limit. Importantly, though, these lines are not horizontal or vertical, thereby not providing epsilon as the limit (as they go to zero in the limit).</p>
+<p>Suppose that there are two points on a circle’s circumference. The curvature between the points comprises of small lines “delta x”, where the limit of each delta x goes to zero.</p>
+<p>If the distance between the curvature is formed by “angulated” distances (very small), then the curvature (or the arc would never form). IT would be in a sense chiseled shaped object. As delta x goes to zero (x being the distance between two points on the circumference of a circle), the sum of these lines forms the circumference of a circle.</p>
+<p>So, the circumference of a circle is a sum of pieces (or distances) X, where the limit of delta X goes to 0.</p>
+<p>It is summation of delta x where the limit of delta x goes to zero. Or X the curvature is the sum of pieces delta x as the limit of each delta x goes to zero</p>
+<p>The summation of delta x as x goes to zero is the circumference of the circle</p>
+<p>From a point X on the circumference of a circle, the distance between point X and point Y (on the circumference) is the summation of delta x’s as the limit of each delta x goes to zero.</p>
+<p>A straight line (whether vertical or horizontal ) defined upon a certain space is formed of adjoining distances, delta x, as the limit of each distance delta x goes to zero resulting in an error e. The summation of (0 to n<br />
+)of these e&#8217;s= ne. Therefore, the length of a line over a certain space can be defined as ne</p>
+<p>A square can be defined by its diagonal, lets call it s.<br />
+This is because all sides are equal and the diagonal determines the length of the sides.</p>
+<p>For a square which can be defined by its diagonal:</p>
+<p>Sum of delta x as the limit of delta x goes to zero.</p>
+<p>(The diagonal)^2= (Summation (0 to n) as the limit of each delta x goes to zero)^2. + (summation (o to n) as the limit of each delta x goes to zero)^2</p>
+<p>Thus the diagonal= Square Root( (summation (o to n) of e)^2+ Square Root (Summation (o to n) of e)^2</p>
+<p>diagonal= square root( (ne)^2+(ne)^2)</p>
+<p>Thus the diagonal = sqrt(2*(n *e)^2)<br />
+Thus the diagonal= sqrt(2)*en</p>
+<p>A circle&#8217;s Circumference= 2 pi r<br />
+Circumference= 2 pi ((Summation (0 to n)(lim as delta r goes to zero)<br />
+Circumference= 2 pi (Summation (0 to n) of e)<br />
+Circumference= 2 pi (ne)</p>
+<p>The above definition works because even if r is not a horizontal line, it should give the same result as a horizontal line because all the lines from the center of the circle to the cirumference comprise of the r, and thus should provide an equivalent result. This is a necessary and sufficient truth, that is, by definition it follows that all the &#8220;rs&#8221; should provide the same result.</p>
+<p>Moreover,</p>
+<p>definition of (r)=circumference/2pi= definition of a circumference/2pi=2pi(ne))/2pi=ne</p>
+<p>definition of an area of a circle:</p>
+<p>Area of a circle= pi (r^2)<br />
+definition of the area of a circle= pi (summation (n=0 to n=n)(limit of delta x as it goes to zero)^2<br />
+=pi(en)^2</p>
+<p>A rectangle’s diagonal can be defined by:</p>
+<p>Diagonal ^2= ( Summation (n=0 to n=n)(limit of delta x as it goes to zero)) ^2+(summation (j=o to j=k) (limit of delta y as it goes to zero)^2</p>
+<p>Diagonal^2= (Summation from 0 to n of e)^2+(summation from j=0 to j=k of e)^2<br />
+Diagonal^2= (ne)^2+ (ke)^2<br />
+Diagonal^2= n^2(e^2) + (k^2)e^2<br />
+Diagonal^2= e^2(n^2+k^2)<br />
+Diagonal= e* sqrt(n^2+k^2)</p>
+<p>where n is not equal to k</p>
+<p>Equilateral Triangle</p>
+<p>Altitude of an Equilateral triangle =(1/2) * √3 * a</p>
+<p>where a is the length of the side. Lets call the altitude h</p>
+<p>a= 2h/Sqrt(3)</p>
+<p>a=2/sqrt(3) *{(sum (o to n))(limit as delta h goes to 0)</p>
+<p>a=2/Sqrt(3) *en</p>
+<p>perimeter of an equilateral triangle = 3a<br />
+definition of perimeter= (6/sqrt(3)) *en</p>
+<p>Isoceles Triangle: Let the 2 identical sides be &#8216;b&#8217;. Lets call the height of the triangle as h. Lets call the base (the third side) &#8216;a&#8217;.</p>
+<p>Then h= sqrt (b^2-1/4(a^2))</p>
+<p>h^2=b^2-(1/4)(a^2)</p>
+<p>b^2= h^2+ (1/4)(a^2)</p>
+<p>b=Sqrt (h^2+(1/4)(a^2))</p>
+<p>definition of b= sqrt((en)^2+1/4(en)^2)</p>
+<p>The above follows because a is a horizontal line and h is a vertical line.</p>
+<p>definition of b= Sqrt(5/4(en^2))<br />
+definition of b= Sqrt(5/4) *en<br />
+definition of b= sqrt(5)/2 *en</p>
+<p>Also,</p>
+<p>definition of b^2= h^2+(1/4(a^2)</p>
+<p>=(en)^2+(1/4(en)^2)<br />
+=5/4(en)^2</p>
+<p>Therefore, definition of b=<br />
+b= sqrt(5/4) en<br />
+b=sqrt(5)/2*en</p>
+<p>definition of h= en<br />
+definition of a= en</p>
+<p>perimeter= a+2b<br />
+definition of the perimeter= definition (of a)+ definition (of 2b)<br />
+definition of the perimeter= en+2 ((Sqrt(5)/2)en)<br />
+definition of the perimeter= en+sqrt(5)en</p>
+<p>surface area of a cube= 6* (l^2) where l is the length of the side</p>
+<p>definition of a surface area of the cube= 6* (en)^2<br />
+definition of a length of the side of a cube= en</p>
+<p>Note: the e, epsilon,is either horizontal or vertical when defining limits.</p>
+<p>Special right triangle 45-45-90 with two legs equal inscribed at the origin: (en)^2+(en)^2= hypotenous^2<br />
+hypotenous^2=2(en)^2<br />
+Hypotenous=Sqrt (2) en</p>
+<p>Therefore, the definition of the line y=x is Sqrt(2)en<br />
+This is because the line y=x cuts the origin on the cartesian plane in two pieces of 45 degree angles and is represented by the hypotenuse in the above theory.</p>
+<p>Similarly y=-x has the same definition. This is because space can exist but the contrary doesn&#8217;t hold true. Non-existence is not a finite quantity.</p>
+<p>Inscribing a circle with center at origin will not produce definitions of lines, such as y=2x, as a circle has tangible boundaries, whereas the special right triangle (or its diaganol in this instance) on the positive side of the cartesian plane can stretch as long as possible, even infinitely longer. In other words, the line y=x would have bounds within the circumference of a circle. It wouldn&#8217;t define it appropriately.</p>
+<p>Among the transformations, translation doesn&#8217;t change the definition of an object. Therefore, where the shape is placed on the Cartesian please doesn&#8217;t change its definition.<br />
+This is easily understood with the basic example:</p>
+<p>derivative of y=nx+a<br />
+dy/dx= n</p>
+<p>Therefore, the position of the object along translations doesn&#8217;t change the derivative (whether it is a positions sideways or b positions high or low). Likewise, for the definition of the derivative y=nx+a would not be different since y=x+a has the same definition as y=x. Therefore, the translations of objects wouldn&#8217;t change their definitions.</p>
+<p>Furthermore, lets equate one unit of the line with one unit on the Cartesian Plane. Then, a line defined on the plane becomes intuitively more accessible.</p>
+<p>For instance, the definition of a horizontal line defined upon a space (0 to 10 on the Cartesian Plane for the sake of assumption) would be 10e (that is, n=10).</p>
+<p>This is not a necessary and sufficient truth as we can also define 2 units on the Cartesian plane and equate it with each of n pieces of a line.</p>
+<p>However, equating one unit on the Cartesian Plane with one e on the line seems to be a reasonable template to further develop these ideas.</p>
+<p>Once we accept the assumption that one unit on the cartesian plane corresponds with one unit of the line en, then half a unit of the line (or, say, 9.5) will correspond with .5e. This is because the piece e is proportional to its distance on a piece of a line (this is because the line is either vertical or horizontal in this case).</p>
+<p>N.B Definition of A = def (B+C)</p>
+<p>Def A=def (B) +def (C)</p>
+<p>Similarly,</p>
+<p>Definition of A= def (B-C)<br />
+Def (A)= Def (B)- Def(C)</p>
+<p>Def(A)= Def (B+C)<br />
+Def(A)/a=Def (B+C)/a where a is any positive number</p>
+<p>Def f deravitave of x= (def(f(x)+ delta x) -def (f(x))/ def (delta x)<br />
+Where limit of delta x goes to zero.</p>
+<p>Suppose f(x)=x</p>
+<p>Definition of f`(x)= lim as delta x goes to zero (def (f(X)+delta x))- def f(x))/def (delta x)</p>
+<p>def (f(X))= srt(2)en<br />
+def (delta x)=e<br />
+Def(f(x)+delta x)= Sqrt(2) en+e<br />
+DEf (f(x)+delta x)-def (f(x))= Sqrt(2)en+e-Sqrt(2)(en)<br />
+DEf (f(x)+delta x)-def (f(x))/def(deltaX)= (Sqrt(2)en+e-Sqrt(2)(en))/e<br />
+=e((Sqrt(2n)+1-Sqrt(2n))/e<br />
+=1</p>
+<p>Note that when we subsitute Sqrt(2) en as the definition, we have already taken the limit to zero of f(x) or f(x+delta x)</p>
+<p>for the definition of the deravative of y=2x</p>
+<p>def 2(x+deltax)-def (2x)/def (delta x)<br />
+2 def(x+delta x)- def (2x)/def(delta x)<br />
+I have mentioned in the above theory how to find the definition of the line y=2x.</p>
+<p>Since<br />
+Def (A)=Def(aB) where a is an integer<br />
+Then Def(A)= a(Def B)</p>
+<p>Therefore it follows,<br />
+def y=def (2x)<br />
+def y=2( Def x)</p>
+<p>def y= 2*Sqrt(2) en<br />
+=2^(3/2) en<br />
+def (f(X))=2^(3/2) en<br />
+Def(f(x)+delta x)= 2(f(X)+delta x)= 2(Sqrt(2) en+e)<br />
+Def (delta x)= e</p>
+<p>Therefore, definition of a derivative= (2(Sqrt(2)en+e))-2^(3/2)en)/e<br />
+= ((2^3/2)en+2e_ -2^(3/2)en)/e<br />
+=2e/e=2</p>
+<p>For the definition of the derivative of y=nx<br />
+definition of nx= n Sqrt(2) en<br />
+DEf(f(x))= definition of nx= n Sqrt(2)e(n1)<br />
+where n1 is the subscript to distinguish from the other n<br />
+Def (F(X+Delta X)= n(Sqrt 2*e(n1)+e)<br />
+Def (Delta X)=e</p>
+<p>Therefore, the definition of the derivative is<br />
+n((Sqrt(2)*e(n1)+e)-n Sqrt(2)*e(n1)/e<br />
+n(Sqrt(2)* e (n1)+e- Sqrt (2)*e(n1)/e<br />
+Then n(e)/e=n</p>
+<p>Therefore, the definition of the drivative nx= n</p>
+<p>N.B The limits of delta x approaching zero are embedded in the definitions.</p>
+</div>                            </div>
+                            <div class="reply">
+                                <a rel='nofollow' class='comment-reply-link' href='#comment-30048' data-commentid="30048" data-postid="123325" data-belowelement="comment-30048" data-respondelement="respond" data-replyto="Reply to Omer Admani" aria-label='Reply to Omer Admani'>Reply</a>                            </div>
+                        </div>
+                    </div>
+                    	<!-- WP adds </li> -->
+    </li><!-- #comment-## -->
+    	<li class="comment even thread-even depth-1" id="li-comment-30049">
+    		                    <div id="comment-30049" itemscope itemtype="http://schema.org/UserComments">
+                        <div class="comment-author vcard">
+                            <img alt='' src='https://secure.gravatar.com/avatar/8f3539268cbb02d8ec0f79df7698f698?s=80&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/8f3539268cbb02d8ec0f79df7698f698?s=160&#038;d=identicon&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/>                            <span class="fn" itemprop="creator" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href='https://chinamangoogleomeradmani.wordpress.com/author/omeradmani/' rel='external nofollow ugc' class='url'>Omer Admani</a></span></span>                                                            <span class="ago">April 1, 2018</span>
+                                                        <span class="comment-meta">
+                                                            </span>
+                        </div>
+                                                <div class="commentmetadata">
+                            <div class="commenttext" itemprop="commentText">
+                                <div class="comment-text-inner"><p>On the Philosophy of Mathematics:</p>
+<p>Please further note that the “New Calculus” shows that the laws of Mathematics are universal, that despite the differences in this calculus, we get equations which are workable and mean something. These laws of Mathematics exist in nature, just like the laws of physics. We decode these laws based upon logic,too, but the very birth of these ideas is mostly intuitive. Even then, so, we “discover” abstract Mathematics which exists in space, truthful, but we can only grasp this through our basic intuitions at first, and “then” justify it through logic. But something should not emerge correct based on something that is incorrect, however, since these are the laws of Mathematics (which in its truest form exist in nature), they can be approached somewhat correctly from wrong foundations. This is the proof for the very existence of these laws, that despite the flaws in the Old Calculus, we could get correct results a lot of the times. This is because we accessed that part of Mathematics in nature that we could have approached from those incorrect foundations. If there weren’t these laws, then the Old Calculus would never have come to be and all the Mathematical foundations would have to be 100 percent correct for Mathematics to work (even) slightly.<br />
+For example def derivative= def (ax)= a def(x) where a is an integer.<br />
+However, how do we come to accept this assumption?</p>
+<p>We do trial and error with equations and realize that this works. Then we accept this assumption based upon the evidence that it leads to solid conclusions. This is based on intuition and discovery rather than being a self-evident truth. Thus, we discover Mathematics rather than create it ourselves. And, since we discover Mathematics, it exists with its laws in nature just like the laws of physics.</p>
+<p>For instance, E (aX+b)=aE(x)+b follows from integrands which have an axiom that integral of (a* f(x)) with limits from b to c is the equivalent to (a*(integral of f(x) with limits from b to c)). This is one of the foundations of calculus, but the rule has its justification in discovery rather than it being self-evident (that is, even if it is axiomatic, it is not self-evident).</p>
+<p>If we couldn’t see 2+2=4 in this universe, then it would be impossible to know what 2+2 would amount to; the only way to know it is 4 in this universe is to add two objects with two other objects. Once, then, we know it is 4, we can go further and claim 1 and 3 equal 4 using the logic: that is, half of two is one and 1.5 of 2 is 3. Therefore, 1 and 3 add up to 4. Logic follows from experience. In this case the discovery is that someone saw 2 objects and 2 other objects, and realized 2 times 2 is 4. Then we could realize what 4 amounts to. And, then we realized that 3 is a so and so fraction of 4, and 1 is so and so fraction of 2 (or 4).</p>
+<p>In other words these numbers exist in nature and are (were) a matter of discovery rather than being based on the notion that their properties are self-evident.<br />
+We can imagine a universe without any objects; in this universe there wouldn’t be any laws of Mathematics since the concept of a number wouldn’t exist. There would be no logic. But since the universe exists with objects in space, there is logic and Mathematics. Mathematics is conditional on the existence of something, a finite quantity.<br />
+In other words there will not be the notion of divisibility in a universe with no objects. Since objects exist in space, there is Mathematics. Thus, the existence of Mathematics is conditional on the existence of the finite–and “hence” limit of delta x going to zero is something finite and not the non-existence of space, that is zero– and thus, discovery. It is a discovery because there are multiple objects in space from which we infer that, say, 2+2=4<br />
+Laws of mathematics vanish when we consider a universe without an object, and as the objects in the universe are created (discovered), so are the laws of Mathematics.</p>
+<p>e(n+5)- e(n)=5e<br />
+e(n+a)-e(n)= a*e</p>
+<p>This is because there are a spaces between e(n+a) and en, with each of those spaces going in the limit to zero and yielding e.</p>
+<p>For the definition of derivative of x^2= def f(x+delta x)- def (f(x))/e<br />
+therefore the definition of ((x+deltax)^2-def (x^2))/e<br />
+Therefore, (def (x^2)+ def(2*x*delta x)+def (delata x)^2-def(X^2))/e</p>
+<p>Therefore, (def(2*x*delta x)+def (delta x)^2)/e</p>
+<p>def (Delta x)^2 is the definition of a parabola.</p>
+<p>Like other objects that have been defined before, the definition of the parabola would remain the same regardless of where it is situated on the cartesian plane. So, we can consider the definition of a parabola which is inscribed at the origin, and replace it in the equation above.<br />
+(x-h)^2 =4p(y-k)<br />
+focus is (h,k+p)<br />
+directrix y=k-p<br />
+vertex is (0,0)<br />
+(defy=en)<br />
+def (k-p)=en</p>
+<p>focus on (0,0)<br />
+k+p=0<br />
+k=-p</p>
+<p>x^2=4p(y-k)<br />
+x^2=4 p(y+p)<br />
+=4py+4p^2<br />
+y=0<br />
+x^2=4p^2</p>
+<p>def (y)= en<br />
+y-k=-p<br />
+k-y=p<br />
+defk-en=defp</p>
+<p>x^2=4p(y-k)<br />
+x^2=4p(k-p-k)<br />
+x^2=4p(-p)<br />
+x^2=-4p^2<br />
+def (x^2)=-def (4p^2)<br />
+Since p is a point on a line, the definition should be e<br />
+def (X^2)=-4e^2</p>
+<p>Therefore, (def(2*x*delta x)+def (delta x)^2)/e<br />
+Therefore, ((def(2*x*delta x) -4e^2)/e<br />
+Moreover, def (2x*deltax)/e-4e</p>
+<p>N.B: When we solve limits that can be evaluated using conjugates, how do we know which result is correct?</p>
+<p>For instance,</p>
+<p>A typical example is: Evaluate lim as x goes to 4 of ((x^1/2)-2)/(x-4)</p>
+<p>Right here when we look at the limits, it comes out as 0/0 (when using the Newtonian Calculus). Then we use the conjugates and the result of the limit is 1/4. However, how do we come to accept the second conclusion and disregard the first conclusion? Because it gives, we think, an answer that is correct. However, from a logical point of view both the conclusions have merit (when thinking using the Newtonian Calculus.</p>
+<p>This is why I am making the argument that there are problems with the old calculus and the justifications aren&#8217;t terse. It is by trial and error that we realize what works and what doesn&#8217;t. What is accepted, then, becomes part of the books. Calculus is based on incorrect foundations and has a lot of logical inconsistency. I encourage people to work at what I am calling the &#8220;New Calculus&#8221;.</p>
+<p>def y=x+a Where a is an integer is def y=x since y=x+a is a translation y=x and the definitions don&#8217;t change under translations.</p>
+<p>As long as a line is bounded within space, it is a partial line. Definition of say y=x requires the definition of the complete line.</p>
+<p>On the Old Calculus:</p>
+<p>The derivative of with respect to x is the function and is defined as,</p>
+<p>f'(x)= lim (as h goes to zero) ((f(x)+h)- f(x))/h)</p>
+<p>The convention is that as the limit of h goes to zero, it implies that h=0. However, since it is the limit that goes to zero, it should provide us with some finite quantity, or existence of space, which can be called e (epsilon).</p>
+<p>When we take derivatives defined upon a certain space, we disregard the error, epsilon. Where there is epsilon in the denominator (of a derivative function), and we assume it is 0, then the derivative doesn&#8217;t exist.</p>
+<p>Since the error is minute in the denominator, the numerator does go to (almost) infinity (where it works), thereby providing a similar result as the assumption that as h goes to zero in the limit, the result is infinity (or the limit of the derivative doesn&#8217;t exist). However, it is not technically correct to think that way.</p>
+<p>IF we find a derivative of a function, where the denominator, h, cancels out with some quantity in the numerator (and results in a function without h), then the epsilons also cancels out, thereby providing the same results as the derivative of the function.</p>
+<p>The third possibility is where h, the denominator, cancels out with some quantity in the numerator, resulting in a function whose limit goes to zero (of h)where both h and x comprise of the function. In this case, since the limit of h goes to zero, it is assumed that these values become zero (however, in this case, this is incorrect, as lim as h goes to zero, it results in the error e, which remains part of the derivative).<br />
+If the derivative has some function with epsilon (say X+e), then the integral would give the function X^2/2+ ex+c, thereby making a lot of calculus incorrect. However, c in this would absorb ex, thereby providing the illusion that the integral is correct. When we take limits of integrals, though, there are discrepancies. If the integral is Xe,and suppose we take the limit from 1 to 5,. then the resulting function is 5e-e=4e.</p>
+<p>Lets think of h in the correct manner which is delta x.<br />
+The limit of h (or delta x) in the derivative as it goes to zero is e because delta x (or change in x) is one piece of a line that goes to zero in the limit.</p>
+<p>The difference between a line (defined upon a certain space) is that it is made up of many pieces (n pieces) of delta x as each delta x goes to zero in the limit thus providing the definition en.</p>
+<p>Omer Admani 48/3 Maniya Housing Society Khalid Bin Waleed Road Karachi Pakistan</p>
+</div>                            </div>
+                            <div class="reply">
+                                <a rel='nofollow' class='comment-reply-link' href='#comment-30049' data-commentid="30049" data-postid="123325" data-belowelement="comment-30049" data-respondelement="respond" data-replyto="Reply to Omer Admani" aria-label='Reply to Omer Admani'>Reply</a>                            </div>
+                        </div>
+                    </div>
+                    	<!-- WP adds </li> -->
+    </li><!-- #comment-## -->
+		</ol>
+	</div>
+
+	<div id="commentsAdd">
+		<div id="respond" class="box m-t-6">
+				<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><h4><span>Leave a Reply</span></h4> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/tiling-one-arc-sided-shape/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://mathblog.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="Comment Text*"></textarea></p><p class="comment-form-author"><input id="author" name="author" type="text" placeholder="Name*" value="" size="30" /></p>
+<p class="comment-form-email"><input id="email" name="email" type="text" placeholder="Email*" value="" size="30" /></p>
+<p class="comment-form-url"><input id="url" name="url" type="text" placeholder="Website" value="" size="30" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='123325' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="bc6f9a2df9" /></p><!-- Anti-spam plugin wordpress.org/plugins/anti-spam/ --><div class="wantispam-required-fields"><input type="hidden" name="wantispam_t" class="wantispam-control wantispam-control-t" value="1647177568" /><div class="wantispam-group wantispam-group-q" style="clear: both;">
+					<label>Current <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b9c0dcf9cb">[email&#160;protected]</a> <span class="required">*</span></label>
+					<input type="hidden" name="wantispam_a" class="wantispam-control wantispam-control-a" value="2022" />
+					<input type="text" name="wantispam_q" class="wantispam-control wantispam-control-q" value="7.2.9" autocomplete="off" />
+				  </div>
+<div class="wantispam-group wantispam-group-e" style="display: none;">
+					<label>Leave this field empty</label>
+					<input type="text" name="wantispam_e_email_url_website" class="wantispam-control wantispam-control-e" value="" autocomplete="off" />
+				  </div>
+</div><!--\End Anti-spam plugin --><p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js" name="ak_js" value="24"/><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.getElementById( "ak_js" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+			</div>
+	</div>
+					</div>
+	</article>
+		<aside id="sidebar" class="sidebar c-4-12 mts-sidebar-sidebar" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+		<div id="text-5" class="widget widget_text"><h3 class="widget-title">Recommended Math Books</h3>			<div class="textwidget"><p align="center"><a href="/mathematics-books/">Click here to see our math book list.</a></p>
+
+<p align="center"><a href="/mathematics-books/"><img src="/images/math-books.png" alt="Mathematics Books" title="Math Books" width="250" height="238" loading="lazy"/></a></p></div>
+		</div><div id="search-3" class="widget widget_search"><h3 class="widget-title">Search</h3><form method="get" id="searchform" class="search-form" action="https://mathblog.com" _lpchecked="1">
+	<fieldset>
+		<input type="text" name="s" id="s" value="" placeholder="Search the site"  />
+		<button id="search-image" class="sbutton" type="submit" value="Search">Search</button>
+	</fieldset>
+</form>
+</div><div id="linkcat-2" class="widget widget_links"><h3 class="widget-title">Useful Links</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="https://www.math.columbia.edu/~woit/wordpress/">Not Even Wrong</a></li>
+<li><a href="https://polymathematics.typepad.com/polymath/">Polymathematics</a></li>
+<li><a href="https://unapologetic.wordpress.com">The Unapologetic Mathematician</a></li>
+
+	</ul>
+</div>
+	</aside><!--#sidebar-->
+	</div><!--#page-->
+	<footer id="site-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+                <div class="copyrights">
+			<div class="container">
+                <!--start copyrights-->
+<div class="row" id="copyright-note">
+<span><a href=" https://mathblog.com/" title=" Mathematics is wonderful!">Math ∞ Blog</a> Copyright &copy; 2022.</span>
+<div class="to-top">&nbsp;</div>
+</div>
+<!--end copyrights-->
+            </div>
+		</div> 
+	</footer><!--#site-footer-->
+</div><!--.main-container-->
+        <!--start footer code-->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-192905992-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-192905992-1');
+</script>    <!--end footer code-->
+    <script type='text/javascript' src='https://cdn.mathblog.com/wp-content/plugins/anti-spam/assets/js/anti-spam.js' id='anti-spam-script-js'></script>
+<script type='text/javascript' src='https://cdn.mathblog.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://cdn.mathblog.com/wp-includes/js/dist/vendor/wp-polyfill.min.js' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/mathblog.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://cdn.mathblog.com/wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://cdn.mathblog.com/wp-content/plugins/thrive-headline-optimizer/frontend/js/triggers.min.js' id='tho-footer-js-js'></script>
+<script type='text/javascript' src='https://cdn.mathblog.com/wp-content/plugins/wp-review-pro/assets/js/jquery.appear.js' id='wp_review-jquery-appear-js'></script>
+<script type='text/javascript' id='wp_review-js-js-extra'>
+/* <![CDATA[ */
+var wpreview = {"ajaxurl":"https:\/\/mathblog.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://cdn.mathblog.com/wp-content/plugins/wp-review-pro/assets/js/main.js' id='wp_review-js-js'></script>
+<script type='text/javascript' src='https://cdn.mathblog.com/wp-content/plugins/wp-review-pro/assets/js/jquery.knob.min.js' id='jquery-knob-js'></script>
+<script type='text/javascript' src='https://cdn.mathblog.com/wp-includes/js/comment-reply.min.js' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://cdn.mathblog.com/wp-content/themes/mts_schema/js/jquery.magnific-popup.min.js' id='magnificPopup-js'></script>
+<script type='text/javascript' src='https://cdn.mathblog.com/wp-content/themes/mts_schema/js/layzr.min.js' id='layzr-js'></script>
+<script type="text/javascript">/*<![CDATA[*/var THO_Front = THO_Front || {}; THO_Front.data = {"end_of_content_id":"tho-end-content","is_single":true,"log_url":"https:\/\/mathblog.com\/wp-json\/tho\/v1\/logs","active_triggers":{"viewport":"thrive_headline"},"log_engagements":[],"post_id":123325,"test_id":0,"const":{"_e_click":1,"_e_scroll":2,"_e_time":3,"_impression":1,"_engagement":2}}/*]]> */</script></body>
+</html>
